@@ -1,37 +1,22 @@
-# Criativos Manager
+# Criativos Manager (v2: design da marca)
 
-Sistema em desenvolvimento associado à **Criativos Digital Solutions**.
+A v2 aplica a identidade do projeto original (tema escuro azul-marinho, Montserrat, logótipo, ecrã de login dividido, PDF no estilo da fatura de referência) sobre o novo sistema com Supabase. Dados bancários e de contacto **não estão no código**: configure-os em *Sistema → Configuração* (ficam na base de dados da empresa).
 
-## Visão do projeto
+Plataforma de gestão comercial e financeira (clientes, catálogo, orçamentos, faturas comerciais, recibos, pagamentos, despesas, relatórios) da Criativos Digital Solutions. Multiempresa, PWA com fila offline.
 
-Criar uma aplicação para ajudar profissionais independentes e pequenos negócios a organizar a sua atividade comercial e financeira num só lugar.
+> **Aviso fiscal:** os documentos são de gestão comercial. **Não** são faturas fiscalmente certificadas nem há homologação ou conformidade fiscal angolana garantida.
 
-## Âmbito planeado
+**Stack:** React + TypeScript + Vite (PWA) · Supabase (Postgres, Auth, RLS) · Dexie/IndexedDB · Cloudflare Workers (static assets).
 
-- Gestão de clientes.
-- Catálogo de produtos e serviços.
-- Orçamentos, faturas comerciais e recibos em PDF.
-- Registo de pagamentos, dívidas e despesas.
-- Resumos e relatórios financeiros.
-- Organização por empresa, utilizadores e permissões.
-- Funcionamento offline com sincronização quando disponível.
+## Começar no Windows 10/11
+1. Instale o Node.js LTS (20 ou superior) e o Git.
+2. `instalar.bat` (cria `.env` a partir de `.env.example`).
+3. Preencha `.env` (ver `docs/SUPABASE_SETUP.md`).
+4. `iniciar.bat` → http://localhost:5173
+5. `testar.bat` → tipos + testes + build.
 
-## Estado atual
+## Primeira conta e empresa
+Em `/registar` crie a conta → confirme o email → entre → o ecrã "Criar a sua empresa" torna-o proprietário com o plano gratuito.
 
-**Fase inicial / planeamento e implementação.** A lista acima descreve o âmbito pretendido, não funcionalidades já concluídas. A validade fiscal dos documentos não é declarada por este projeto.
-
-## Princípios
-
-- Interface em português, adaptada ao contexto de Angola.
-- Valores monetários em Kwanza (AOA / Kz).
-- Segurança, controlo de acesso e proteção dos dados.
-- Documentação, testes e evolução incremental.
-
-## Tecnologias
-
-A arquitetura e a stack técnica serão documentadas à medida que forem efetivamente implementadas e validadas.
-
-## Responsável
-
-[Criativos Digital Solutions](https://web.facebook.com/CriativosDigitalSolutions/)  
-[Wilson Raposo Mbala — GitHub](https://github.com/WilsonRaposo017)
+## Estado e documentação
+`PROGRESS.md` (o que está feito/pendente), `DECISIONS.md`, `SECURITY.md`, `docs/`.
