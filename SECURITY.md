@@ -9,7 +9,7 @@
 - Apenas a chave pública (publishable) vai para o navegador; `.env` está no `.gitignore`; CI falha se uma chave secreta aparecer na build.
 - Recuperação de palavra-passe com resposta neutra (não revela se o email existe). Palavra-passe mínima de 10 caracteres na UI.
 - Exportações CSV mitigam injeção de fórmulas. Importação limitada (2 MB, 2000 linhas) e validada antes de gravar.
-- `npm audit --omit=dev`: 0 vulnerabilidades (25/10/2026).
+- Última auditoria registada: `npm audit --omit=dev` reportou 0 vulnerabilidades em 25/10/2026. Este resultado está desactualizado e não comprova o estado actual das dependências; repetir a auditoria antes de cada publicação.
 
 ## Limitações / por fazer antes de dados reais
 1. Ativar nas definições do Supabase Auth: confirmação de email, política de palavras-passe, proteção contra palavras-passe vazadas, limites de taxa, e **SMTP próprio** (o SMTP por defeito é limitado).
